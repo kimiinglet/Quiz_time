@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">View High Score</a>
+            <a class="navbar-brand" href="#">Timer</a>
+        </div>
+    </nav>
+
+    <!-- Div Id container -->
+    <div id="container">
+
+
+        <!-- Div that inside-contains welcome page -->
+        <div id="inside-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Welcome!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Let's test your knowledge on the Human Body.<br>You will be given 5 questions with a time limit
+                        of 30 seconds.<br>
+                        If you choose the correct answer you will not be penalized on your timer,<br> if you choose the
+                        wrong
+                        answer 5 seconds will be taken from you.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
+
+
+            <!-- questions and answer next page not front page -->
+            <div class="inside-questions">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="question">
+                            <h4 id="questionPrompts">Blah Blah Blah</h4>
+                        </div>
+                    </div>
+                    <div id="choices">
+
+                        <button class="choice" id="A" onclick="checkAnswer('A')">Listen</button>
+
+                        <button class="choice" id="B" onclick="checkAnswer('B')">Learn</button>
+
+                        <button class="choice" id="C" onclick="checkAnswer('C')">Teach</button>
+
+                        <button class="choice" id="D" onclick="checkAnswer('D')">Remember</button>
+
+                    </div>
+                    </h3>
+                    <hr>
+                    <!-- alert(Correct)/ alert(incorrect) -->
+                </div>
+            </div>
+
+            <!-- All done Page -->
+            <div id="allDone">
+                <div id="row">
+                    <div id="col-md-12"><p>Your final score is (score added up)</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Enter Initals">
+                        </div>
+                        <div class="col-md-6">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                        </div>
+                        
+                    </div>
+                </form>
+
+            </div>
+            <!-- timer -->
+
+            <div id="timer">
+
+                <div id="counter"></div>
+
+                <div id="btimeGauge"></div>
+
+                <div id="timeGauge"></div>
+
+            </div>
+
+            <div id="progress"></div>
+
+        </div>
+
+        <div id="scoreContainer" style="display: none"></div>
+
+    </div>
+    </div>
+
+    <script src="questins.js"></script>
+
+</body>
+
+</html>

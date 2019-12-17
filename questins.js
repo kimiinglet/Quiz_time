@@ -1,19 +1,17 @@
-var quizEl = document.getElementById('quiz');
-var resultsEl = document.getElementById('results');
-var sumbitButton = document.getElementById('submit');
+var start = $("#start");
 
-function buildQuiz(){}
+var question = $("#question");
 
-function showResults(){}
+var choiceA = $("#A");
 
-// display quiz right away
-buildQuiz();
+var choiceB = $("#B");
 
-// on submit, show results
-submitButton.addEventListener('click', showResults);
+var choiceC = $("#C");
+
+var choiceD = $("#D");
 
 
-  var myQuestions = [
+let question = [
     {
       question: "Which bone are babies born without?",
       answers: {
@@ -65,39 +63,3 @@ submitButton.addEventListener('click', showResults);
         correctAnswer: "a"
       }
   ];
-
-  function buildQuiz(){
-    // we'll need a place to store the HTML output
-    const output = [];
-  
-    // for each question...
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-  
-        // we'll want to store the list of answer choices
-        const answers = [];
-  
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-  
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-  
-        // add this question and its answers to the output
-        output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
-        );
-      }
-    );
-  
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-    }
