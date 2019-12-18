@@ -13,8 +13,8 @@ You will see the timer started in the bottom left:
 <img width="1239" alt="Screen Shot 2019-12-17 at 11 43 57 PM" src="https://user-images.githubusercontent.com/56975796/71059181-c9b8e400-2127-11ea-837f-b5a22db93c38.png">
 
 
-    -If you get the question correct, you are not penalized.
-    
+    -If you get the question correct, you are not penalized and the button will turn green.
+<img width="1191" alt="Screen Shot 2019-12-17 at 11 44 08 PM" src="https://user-images.githubusercontent.com/56975796/71059236-f40aa180-2127-11ea-91bc-46f61f2b03f0.png">
     
     
     -If you answer incorrectly, time will be taken off from the timer and the button will turn red.
