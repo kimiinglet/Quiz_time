@@ -1,69 +1,69 @@
+/* Styling for Various Quiz Parts */
+
+/* General Body Style */
 body{
     font-size: 20px;
-    font-family: monospace;
+    font-family: fantasy;
+    background-color: gray;
 }
 
 #container{
     margin : 20px auto;
     background-color: white;
-    height: 300px;
-    width : 70%;
+    height: 500px;
+    width : 700px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
-    position: relative;
+    position: justify;
 }
+
+/* Start box style */
 #start{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: bolder;
-    word-break: break-all;
-    width:100px;
-    height:150px;
-    border : 2px solid lightgrey;
+    width:400px;
+    /* height:300px; */
+    /* border : 2px solid lightgrey; */
     text-align: center;
+    /* overflow-wrap: break-word; */
     cursor: pointer;
     position: absolute;
-    left:300px;
+    /* left:300px; */
     top:50px;
     color : lightgrey;
 }
+.p {
+    text-align: left;
+}
 #start:hover{
-    border: 3px solid lightseagreen;
+    border: 3px solid slateblue
     color : lightseagreen;
 }
 
-/* #qImg{
-    width : 200px;
-    height : 200px;
-    position: absolute;
-    left : 0px;
-    top : 0px;
-}
-#qImg img{
-    width : 200px;
-    height : 200px;
-    border-top-left-radius: 5px;
-} */
-
-#question{
+/* Style for Question box begins here */
+/* #question{
     width:500px;
     height : 125px;
     position: absolute;
     right:0;
     top:0;
-}
+} */
 #question p{
     margin : 0;
     padding : 15px;
-    font-size: 1.25em;
+    font-size: 20px;
+    text-align: center;
 }
 
+Choices are styled here *
 #choices{
     width : 480px;
-    position: absolute;
+    /* position: absolute; */
     right : 0;
     top : 125px;
     padding : 10px
 }
+
 .choice{
     display: inline-block;
     width : 135px;
@@ -72,12 +72,14 @@ body{
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
+    margin: 10px;
 }
 .choice:hover{
-    border : 2px solid grey;
+    border : 2px solid black;
     font-weight: bold;
 }
 
+/* Timer Styling goes here */
 #timer{
     position: absolute;
     height : 100px;
@@ -85,6 +87,7 @@ body{
     bottom : 0px;
     text-align: center;
 }
+
 #counter{
     font-size: 3em;
 }
@@ -102,6 +105,8 @@ body{
     margin-top : -10px;
     margin-left : 25px;
 }
+
+/* Progress Bar goes here */
 #progress{
     width : 500px;
     position: absolute;
@@ -119,6 +124,8 @@ body{
     margin-left : 5px;
     margin-right : 5px;
 }
+
+/* Final Score Style goes here */
 #scoreContainer{
     margin : 20px auto;
     background-color: white;
@@ -129,20 +136,27 @@ body{
     box-shadow: 0px 5px 15px 0px;
     position: relative;
     display: none;
+    z-index: 2;
 }
-#scoreContainer img{
+
+#scoreContainer img {
     position: absolute;
     top:100px;
     left:325px;
-}
+    align-content: center;
+    text-align: center;
+} 
+
+
 #scoreContainer p{
-    position: absolute;
+    /* position: absolute; */
     display: block;
-    width : 59px;
-    height :59px;
+    /* width : 59px;
+    height :59px; */
     top:130px;
     left:325px;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    align-content: center;
 }

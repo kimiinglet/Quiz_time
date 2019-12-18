@@ -1,7 +1,7 @@
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var question = document.getElementById("question");
-var qImg = document.getElementById("qImg");
+// var qImg = document.getElementById("qImg");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
