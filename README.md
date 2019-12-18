@@ -14,4 +14,5 @@ Human Body Quiz
 
 #At the end the your high score will show and you will insert your initals.
 
+<img width="1188" alt="Screen Shot 2019-12-17 at 11 44 38 PM" src="https://user-images.githubusercontent.com/56975796/71059021-5d3de500-2127-11ea-9499-84427ef5b794.png">
 
