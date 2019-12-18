@@ -9,35 +9,32 @@ body{
 
 #container{
     margin : 20px auto;
+    
     background-color: white;
     height: 500px;
     width : 700px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
-    position: justify;
+    position: relative;
 }
 
 /* Start box style */
 #start{
-    /* font-size: 1.5em; */
     font-weight: bolder;
-    width:400px;
-    /* height:300px; */
-    /* border : 2px solid lightgrey; */
+    width:auto;
     text-align: center;
-    /* overflow-wrap: break-word; */
     cursor: pointer;
     position: absolute;
-    /* left:300px; */
     top:50px;
-    color : lightgrey;
+    color : black;
+    margin: 30px;
 }
 .p {
     text-align: left;
 }
 #start:hover{
-    border: 3px solid slateblue
-    color : lightseagreen;
+    border: 3px solid slateblue;
+    color : gray;
 }
 
 /* Style for Question box begins here */
@@ -89,7 +86,7 @@ Choices are styled here *
 }
 
 #counter{
-    font-size: 3em;
+    font-size: 15%;
 }
 #btimeGauge{
     width : 150px;
@@ -160,3 +157,8 @@ Choices are styled here *
     text-align: center;
     align-content: center;
 }
+
+/* Restart Game Button */
+function restartGame() {
+    window.location.reload();
+};

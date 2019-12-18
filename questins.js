@@ -52,7 +52,7 @@ let questions = [
         choiceB: "The Skin",
         choiceC: "Kidney",
         choiceD: "Liver",
-        correct: "A"
+        correct: "B"
       },
   ];
 
@@ -88,7 +88,7 @@ function startQuiz(){
     quiz.style.display = "block";
     renderProgress();
     renderCounter();
-    TIMER = setInterval(renderCounter,100000); // 1000ms = 1s
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -171,3 +171,5 @@ function scoreRender(){
     // scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
+
+fu
