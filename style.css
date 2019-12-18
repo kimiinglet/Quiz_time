@@ -158,7 +158,7 @@ Choices are styled here *
     align-content: center;
 }
 
-/* Restart Game Button */
-function restartGame() {
-    window.location.reload();
-};
+/* 
+/* Restart Game Button */ 
+/* function restartGame () { */
+    /* window.location.reload(); */
