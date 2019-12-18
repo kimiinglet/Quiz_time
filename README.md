@@ -10,7 +10,15 @@ Human Body Quiz
 
 #Once you press the start button it will take you to the first question.
     -If you get the question correct, you are not penalized.
-    -If you answer incorrectly, time will be taken off from the timer.
+    
+    
+    
+    -If you answer incorrectly, time will be taken off from the timer and the button will turn red.
+    
+<img width="1212" alt="Screen Shot 2019-12-17 at 11 44 30 PM" src="https://user-images.githubusercontent.com/56975796/71059092-8f4f4700-2127-11ea-83e7-c526f7e22384.png">
+
+
+
 
 #At the end the your high score will show and you will insert your initals.
 
