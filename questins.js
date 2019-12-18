@@ -1,15 +1,9 @@
 var start = $("#start");
-
 var question = $("#question");
-
 var choiceA = $("#A");
-
 var choiceB = $("#B");
-
 var choiceC = $("#C");
-
 var choiceD = $("#D");
-
 
 let question = [
     {
@@ -63,3 +57,28 @@ let question = [
         correctAnswer: "a"
       }
   ];
+
+  const lastQuestion = questions.length - 1;
+
+let runningQuestion = 0;
+
+// render a question
+
+function renderQuestion(){
+
+    let q = questions[runningQuestion];
+
+   
+
+    question.innerHTML = "<p>"+ q.question +"</p>";
+
+    qImg.innerHTML = "<img src="+ q.imgSrc +">";
+
+    choiceA.innerHTML = q.choiceA;
+
+    choiceB.innerHTML = q.choiceB;
+
+    choiceC.innerHTML = q.choiceC;
+
+
+  //Starts the quiz back at the Landing page

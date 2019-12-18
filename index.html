@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html lang="en">
 
@@ -56,75 +56,91 @@
                     <button id="start">Start Quiz</button>
                 </div>
             </div>
+        </div>
 
 
-            <!-- questions and answer next page not front page -->
-            <div class="inside-questions">
+        <!-- questions and answer next page not front page -->
+        <div class="inside-questions">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="question">
+                        <h4 id="questionPrompts">Blah Blah Blah</h4>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="question">
-                            <h4 id="questionPrompts">Blah Blah Blah</h4>
+
+                        <div id="choices">
+
+                            <button class="choice" id="A" onclick="checkAnswer('A')">Listen</button>
+                            <br>
+                            <button class="choice" id="B" onclick="checkAnswer('B')">Learn</button>
+                            <br>
+                            <button class="choice" id="C" onclick="checkAnswer('C')">Teach</button>
+                            <br>
+                            <button class="choice" id="D" onclick="checkAnswer('D')">Remember</button>
                         </div>
                     </div>
-                    <div id="choices">
+                </div>
+                <hr>
+                <!-- alert(Correct)/ alert(incorrect) -->
+            </div>
+        </div>
 
-                        <button class="choice" id="A" onclick="checkAnswer('A')">Listen</button>
-
-                        <button class="choice" id="B" onclick="checkAnswer('B')">Learn</button>
-
-                        <button class="choice" id="C" onclick="checkAnswer('C')">Teach</button>
-
-                        <button class="choice" id="D" onclick="checkAnswer('D')">Remember</button>
-
-                    </div>
-                    </h3>
-                    <hr>
-                    <!-- alert(Correct)/ alert(incorrect) -->
+        <!-- All done Page -->
+        <div id="allDone">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>All Done!</h4>
                 </div>
             </div>
-
-            <!-- All done Page -->
-            <div id="allDone">
-                <div id="row">
-                    <div id="col-md-12"><p>Your final score is (score added up)</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Your final score is (score added up)</p>
                 </div>
-                <form>
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Enter Initals">
-                        </div>
-                        <div class="col-md-6">
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter Initals">
+                    </div>
+                    <div class="col-md-6">
                         <input class="btn btn-primary" type="submit" value="Submit">
-                        </div>
-                        
                     </div>
-                </form>
 
-            </div>
-            <!-- timer -->
-
-            <div id="timer">
-
-                <div id="counter"></div>
-
-                <div id="btimeGauge"></div>
-
-                <div id="timeGauge"></div>
-
-            </div>
-
-            <div id="progress"></div>
+                </div>
+            </form>
 
         </div>
 
-        <div id="scoreContainer" style="display: none"></div>
+        <!-- High Score page -->
+        <div id="highScore">
+            <h4>High Scores</h4>
+            <div class="row">
+                <div class="col-md-">
+                    <input type="text" class="form-control" placeholder="high score">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary btn-sm">Go Back</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-secondary btn-sm">Clear Highscores</button>
+                </div>
+            </div>
+            <!-- timer -->
 
-    </div>
-    </div>
 
-    <script src="questins.js"></script>
+
+
+            <div id="scoreContainer" style="display: none"></div>
+
+        </div>
+
+
+        <script src="questins.js"></script>
 
 </body>
 
-</html>
+</html> -->
