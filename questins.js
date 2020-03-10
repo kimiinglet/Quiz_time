@@ -1,7 +1,6 @@
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var question = document.getElementById("question");
-// var qImg = document.getElementById("qImg");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
@@ -72,7 +71,6 @@ function renderQuestion(){
     let q = questions[runningQuestion];
     
     question.innerHTML = "<p>"+ q.question +"</p>";
-    // qImg.innerHTML = "<img src="+ q.imgSrc +">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
@@ -158,17 +156,8 @@ function answerIsWrong(){
 function scoreRender(){
     scoreDiv.style.display = "block";
     
-    // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
+   const scorePerCent = Math.round(100 * score/questions.length);
     
-    // // choose the image based on the scorePerCent
-    // let img = (scorePerCent >= 80) ? "img/5.png" :
-    //           (scorePerCent >= 60) ? "img/4.png" :
-    //           (scorePerCent >= 40) ? "img/3.png" :
-    //           (scorePerCent >= 20) ? "img/2.png" :
-    //           "img/1.png";
-    
-    // scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
