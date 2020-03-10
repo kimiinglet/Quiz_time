@@ -13,4 +13,12 @@ As a coding bootcamp student, I want to take a timed quiz on Javascript fundamen
 
   * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
 
+## Please check out my work: 
+
+https://kimiinglet.github.io/Quiz_time/
+
+https://github.com/kimiinglet/Quiz_time.git
+
+<img src="./Quiz.png">
+
 
